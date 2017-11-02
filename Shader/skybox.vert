@@ -1,4 +1,4 @@
-#version 330 core
+#version 320 es
 layout (location = 0) in lowp vec3 position;
 out lowp vec3 TexCoords;
 

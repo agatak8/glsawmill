@@ -1,4 +1,4 @@
-#version 330 core
+#version 320 es
 
 in lowp vec2 vTexCoord;
 in lowp vec3 vNormal;
@@ -24,7 +24,7 @@ lowp vec3 light() {
 
 	lowp vec3 viewDir = normalize(viewPosition - vPosition);
 	lowp vec3 reflectDir = reflect(-lightDir, vNormal); 
-	lowp float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);
+	lowp float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32.0);
 	lowp vec3 specular = 0.5f * spec * lightDiffuseColor;  
 
     return vec3(lightAmbientColor + attenuation * (diffuse + specular));

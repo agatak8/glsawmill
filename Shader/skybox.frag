@@ -1,4 +1,4 @@
-#version 330 core
+#version 320 es
 in lowp vec3 TexCoords;
 out lowp vec4 color;
 
