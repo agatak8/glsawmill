@@ -22,7 +22,7 @@ using namespace std;
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <SOIL.h>
+#include <SOIL/SOIL.h>
 
  // Model
 #include "Model/PrimitiveFactory.h"
